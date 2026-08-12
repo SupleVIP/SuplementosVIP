@@ -1,0 +1,219 @@
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1001;
+}
+
+body{
+    padding-top: 10px; /* evita que el contenido quede tapado por el header fijo, ajusta según altura real */
+}
+
+body{
+    background-color: white;
+} 
+
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto; 
+    width: auto;
+    gap: 15px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-productos > div{
+    flex: 0 0 calc(50% - 40px);
+}
+.contenedor-productos > div:hover {
+background-color: #0c0a0a;
+}
+.contenedor-productos > div:hover h3{
+    color: white;
+}
+.tarjeta-creatina{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.tarjeta-creatina img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-creatina h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.tarjeta-proteina{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-proteina img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-proteina h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.tarjeta-salud{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-salud img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-salud h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.tarjeta-preentrenos{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-preentrenos img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-preentrenos h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.tarjeta-quemador{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-quemador img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-quemador h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.tarjeta-gainer{
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-gainer img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tarjeta-gainer h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.titulo{
+    color: rgb(255, 196, 46);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    
+}
+
+.logo{
+    max-width: 100%;
+    width: 64px;
+}
+
+#open-menu{
+    display: none;
+}
+
+.abrir-boton-nav{
+    cursor: pointer;
+    font-size: 28px;
+    padding: 10px 15px;
+    z-index: 1000;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+#open-menu:checked ~ .nav{
+    left: 0;
+}
+
+.lista-nav{
+    list-style: none;
+    padding: 60px 0 0 0;
+    margin: 0;
+}
+
+.lista-nav li{
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.lista-nav li:hover{
+    background-color: #444;
+}
+h2{
+    text-align: center;
+}
